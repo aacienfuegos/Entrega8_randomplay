@@ -305,6 +305,7 @@ describe("Funcionales", function(){
        async function () {
 
            for(var i=0; i< 10; i++) {
+               browser.deleteCookies();
                this.msg_err = "No se ha podido acceder a /quizzes/randomplay";
                await visit("/quizzes/randomplay");
                browser.assert.status(200);
@@ -323,7 +324,6 @@ describe("Funcionales", function(){
                tokens = att.action.split("/")
                new_id = parseInt(tokens[tokens.length-1])
                id.should.not.be.equal(new_id)
-               browser.deleteCookies();
            }
        });
 
