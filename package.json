@@ -10,6 +10,6 @@
         "assignmentId": "78802"
     },
     "dependencies": {
-        "nodegit": "^0.26.5"
+        "nodegit": "^0.27.0"
     }
 }
